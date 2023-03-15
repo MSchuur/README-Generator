@@ -1,5 +1,6 @@
 // Packages needed for this project
 const inquirer = require('inquirer')
+const generateMarkdown = require('./util/generateMarkdown')
 const fs = require('fs');
 
 // The array of questions for user input for the readme file
@@ -54,14 +55,16 @@ const readmeQuestions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    console.log()
+    fs.writeFile('README.md', fileCreate, (error) =>
+        error ? console.log('An error has occured and the Markdown file was not created') : console.log('You have successfully created the README.md file')
+    )
 }
 
 // The function that will initialize project
 const init = () => {
     return inquirer.prompt(readmeQuestions)
         .then((readmeAnswers) => {
-            console.log(readmeAnswers)
+            const fileCreate = generateMarkdown(readmeAnswers)
             return readmeAnswers
         })
         .catch ((error) => {
