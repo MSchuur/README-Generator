@@ -85,6 +85,8 @@ ${data.contributing}
 ${data.testing}
 
 ## Questions
+
+Any questions regarding this project can be directed to: \n
 ${data.email}\n
 ${data.githubName}
 
