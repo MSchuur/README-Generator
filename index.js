@@ -54,17 +54,20 @@ const readmeQuestions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile('README.md', fileCreate, (error) =>
-        error ? console.log('An error has occured and the Markdown file was not created') : console.log('You have successfully created the README.md file')
-    )
-}
+// function writeToFile(fileName, data) {
+//     fs.writeFile('./util/README.md', readmeAnswers, (error) =>
+//         error ? console.log('An error has occured and the Markdown file was not created') : console.log('You have successfully created the README.md file')
+//     )
+// }
 
 // The function that will initialize project
 const init = () => {
     return inquirer.prompt(readmeQuestions)
         .then((readmeAnswers) => {
             const fileCreate = generateMarkdown(readmeAnswers)
+            fs.writeFile('./util/README.MD', fileCreate, (error) =>
+            error ? console.log('An error has occured and the Markdown file was not created') : console.log('You have successfully created the README.md file')
+            )
             return readmeAnswers
         })
         .catch ((error) => {
@@ -74,5 +77,3 @@ const init = () => {
 
 // Function call to initialize project
 init();
-
-writeToFile()
