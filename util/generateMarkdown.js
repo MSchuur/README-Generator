@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Renders the appropriate licnese badge depending on the license chossen by the user during the CLI input
 const renderLicenseBadge = (license) => {
  const licenseBadges = {
     'None': ' ',
@@ -45,7 +44,7 @@ ${renderLicenseBadge(data.license)}
 - [Questions](#Questions)
 
 ## Description
-${data.discription}
+${data.description}
 
 ## Installation
 ${data.installation}
@@ -63,7 +62,7 @@ ${data.contributing}
 ${data.testing}
 
 ## Questions
-${data.email}
+${data.email}\n
 ${data.githubName}
 
 `;
