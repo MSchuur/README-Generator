@@ -8,32 +8,38 @@ const readmeQuestions = [
     {
         type: 'input',
         message: 'Enter your Project Title Here: ',
-        name:   'title'
+        name:   'title',
+        validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
     {
         type: 'input',
         message: 'Provide a short description explaining the what, why, and how of your project: ',
         name: 'description',
+        validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
     {
         type: 'input',
         message: 'Describe the steps required to install your project: ',
         name: 'installation',
+        validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
     {
         type: 'input',
         message: 'Provide instructions and examples for use: ',
         name: 'usage',
+        validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
     {
         type: 'input',
         message: 'List your collaborators, if you used any third-party assets that require attribution: ',
         name: 'contributing',
+        validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
     {
         type: 'input',
         message: 'Did you write tests for this project. If yes provide examples on how to run. If not type "N/A": ',
         name: 'testing',
+        validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
     {
         type: 'input',

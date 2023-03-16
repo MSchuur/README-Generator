@@ -58,13 +58,13 @@ const generateMarkdown = (data) =>{
 ${renderLicenseBadge(data.license)}
 
 ## Table of Content
-- [Description](#Description)
-- [Installation](#Installation)
-- [Usage](#Usage)
-- [License](#License)
-- [Contributing](#Contributing)
-- [Testing](#Testing)
-- [Questions](#Questions)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Testing](#testing)
+- [Questions](#questions)
 
 ## Description
 ${data.description}
