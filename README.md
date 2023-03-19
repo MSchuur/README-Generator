@@ -16,7 +16,13 @@ Every good project requires a professional looking README file to let everyone k
 To install the README Generator, 'Git Clone' the repo to a local instance. In your terminal ensure you are in the appropriate directory and run 'npm install' from the CLI which will install 'Inquirer' which is specified from the dependencies in the 'package.json' file. 
 
 ## Usage
-Usage
+To start the application type 'node index.js' in the command line.
+
+Answer the prompts in your command line to generate the README.
+
+After answering all the prompts, your README file will be named 'NewREADME.md' and will be ready for you in the util file.
+
+The README has automatically generated badges for the license with an automaticlly generated link to the appropriate license site as well as your email and GitHub username.
 
 ## License
 This project does not have a license attached.

@@ -87,7 +87,10 @@ ${data.testing}
 ## Questions
 
 Any questions regarding this project can be directed to: \n
+EMail me at:
 ${data.email}\n
+
+My Github username:
 ${data.githubName}
 
 `;

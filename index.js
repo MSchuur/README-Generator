@@ -65,7 +65,7 @@ const init = () => {
     return inquirer.prompt(readmeQuestions)
         .then((readmeAnswers) => {
             const fileCreate = generateMarkdown(readmeAnswers)
-            fs.writeFile('./util/README.MD', fileCreate, (error) =>
+            fs.writeFile('./util/NewREADME.MD', fileCreate, (error) =>
             error ? console.log('An error has occured and the Markdown file was not created') : console.log('You have successfully created the README.md file')
             )
             return readmeAnswers
