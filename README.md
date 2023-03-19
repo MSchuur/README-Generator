@@ -51,4 +51,5 @@ Any questions regarding this project can be directed to:
 
 MSchuur31@Gmail.com
 
+Github username.
 MSchuur
