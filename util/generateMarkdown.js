@@ -1,6 +1,6 @@
 // Renders the appropriate licnese badge depending on the license chossen by the user during the CLI input
 const renderLicenseBadge = (license) => {
- const licenseBadges = {
+  const licenseBadges = {
     'None': ' ',
     'Apache License 2.0': '![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)',
     'GNU General Public License v3.0': '![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)',
@@ -92,7 +92,6 @@ ${data.email}\n
 
 My Github username:
 ${data.githubName}
-
 `;
 }
 
